@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Global Goals - About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(images/low-angle-stacked-books-graduation-cap-ladders-education-day.jpg);
+            background-size: cover;
+            color: var(--text-dark);
+            position: relative;
+            background-blend-mode: hard-light;
+            background-color: #4d4d4d;
+        }
+        /* Navbar styles matching existing theme */
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            background: white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #b00000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: #ff4444;
+        }
+        /* Content container */
+        .about-container {
+            top: 20px;
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+
+        .section-title {
+            color: #b00000;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .content-section {
+            margin-bottom: 2.5rem;
+            padding: 20px;
+            background: rgba(249, 249, 249, 0.95);
+            border-radius: 10px;
+        }
+
+        .highlight-list {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .highlight-list li {
+            margin-bottom: 1rem;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .highlight-list li::before {
+            content: "•";
+            color: #b00000;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -3px;
+        }
+
+        .challenge-box {
+            background: #ffe6e6;
+            padding: 20px;
+            border-left: 4px solid #b00000;
+            margin: 20px 0;
+        }
+
+        .commitment-section {
+            text-align: center;
+            padding: 30px;
+            background: #b00000;
+            color: white;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                margin: 30px 15px;
+                padding: 20px;
+            }
+            
+            .navbar ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .navbar ul li {
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="qualityeduindex.html">Home</a></li>
+            <li><a href="about us.html"  class="active">About us</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="userprofile.html">Profile</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="teams.html">Team</a>
+            <li><a href="content.html">Content</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-container">
+        <h1 class="section-title">About us!</h1>
+
+        <div class="content-section">
+            <h2 class="section-title">Why Quality Education is Essential</h2>
+            <ul class="highlight-list">
+                <li><strong>Empowers People:</strong> Equips individuals with knowledge, skills, and self-esteem for informed decision-making</li>
+                <li><strong>Breaks Poverty Cycle:</strong> Creates job opportunities and lifts communities out of poverty</li>
+                <li><strong>Boosts Economy:</strong> Educated workforce drives national development and innovation</li>
+                <li><strong>Promotes Equality:</strong> Ensures equal opportunities regardless of gender or social status</li>
+                <li><strong>Supports Sustainability:</strong> Teaches environmental awareness and global citizenship</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Current Challenges</h2>
+            <div class="challenge-box">
+                <h3>Obstacles to Quality Education</h3>
+                <ul class="highlight-list">
+                    <li>62 million children out of school worldwide</li>
+                    <li>Shortage of qualified teachers (especially in STEM fields)</li>
+                    <li>Outdated curricula lacking 21st-century skills</li>
+                    <li>Inadequate school infrastructure in rural areas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Our Solutions</h2>
+            <ul class="highlight-list">
+                <li>Teacher training programs with modern pedagogical methods</li>
+                <li>Digital classroom initiatives for remote learning</li>
+                <li>Curriculum modernization focusing on:
+                    <ul class="highlight-list">
+                        <li>Critical thinking</li>
+                        <li>Problem-solving</li>
+                        <li>Digital literacy</li>
+                        <li>Sustainable development</li>
+                    </ul>
+                </li>
+                <li>Public-private partnerships for school infrastructure</li>
+            </ul>
+        </div>
+
+        <div class="commitment-section">
+            <h2>Our Commitment to SDG 4</h2>
+            <p>We're building a global network of educators, policymakers, and volunteers to:</p>
+            <ul class="highlight-list">
+                <li>Advocate for education funding</li>
+                <li>Develop open-source learning materials</li>
+                <li>Support girls' education initiatives</li>
+                <li>Promote vocational training programs</li>
+            </ul>
+            <p style="margin-top: 20px; font-size: 1.2rem;">
+                <em>"Join us in creating a world where every individual has the opportunity to learn, grow, and flourish."</em>
+            </p>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+/* Global Styles for all HTML files */
+
+/* Home Page Theme Variables */
+:root {
+    --primary-red: #b00000;
+    --dark-red: #400303;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --text-dark: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Or a different default font */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/low-angle-stacked-books-graduation-cap-ladders-education-day.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #dddddded; /* Or a suitable default */
+    color: #333;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Typography */
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;  /*Or a different heading font */
+    color: var(--dark-red);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Layout & General Styling */
+
+.wrapper {
+    max-width: 1200px;
+    margin: 100px auto 50px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: var(--primary-red);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4444; /* Hover color */
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--primary-red);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #ff4444;
+}
+
+/* Buttons */
+.btn, .details-button, #feedback-form button[type="submit"] {
+    background: var(--primary-red);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    display: inline-block;  /* Make buttons inline-block by default */
+    text-align: center;   /* Center the text */
+    text-decoration: none;   /* Remove underlines from links */
+}
+.btn:hover, .details-button:hover, #feedback-form button[type="submit"]:hover  {
+    background: #ff4444; /* Darker red on hover */
+}
+
+/* Cards */
+.card, .volunteer-card, .section-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /*Add transition for smooth hover effect */
+}
+
+.card:hover, .volunteer-card:hover, .section-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background: var(--dark-red);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+/* Media Queries - Mobile Responsiveness */
+@media (max-width: 768px) {
+    .wrapper {
+        margin: 80px 15px 30px;
+        padding: 20px;
+    }
+
+    nav {
+        top: 10px;
+        right: 15px;
+        padding: 8px 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+}
+
+ .swasth-footer {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 2rem;
+}
+
+.footer-brand {
+    flex: 1;
+}
+
+.footer-brand h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #c22c2c;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+.footer-columns {
+    flex: 1;
+}
+
+.links-section {
+    display: flex;
+    gap: 4rem;
+}
+
+.links-group {
+    flex: 1;
+}
+
+.editors-group {
+    flex: 0.5;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: #c22c2c;
+}
+
+.links-grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.editor-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.links-section a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.links-section a:hover {
+    color: #4CAF50;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #444444;
+}
+
+.footer-copyright p {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .links-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .links-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

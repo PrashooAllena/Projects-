@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <title>Quality Education</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+
+</head>
+<body>
+ 
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+    <div class="home-wrapper">
+        <div class="logo-container">
+            <img src="images/image-removebg-preview1.png" alt="Logo">
+            <span class="logo-name">Global Goals</span>
+        </div>
+
+    <header id="top">
+        <h1>Quality <span>Education</span></h1>
+    </header>
+
+    <section class="stud">
+        <h2>Shakesh, student 3</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="feedback">feedback Page</h2>
+                    <h3>Technical Description</h3>
+                    <h3>1. HTML Structure:</h3>
+                    <ul>
+                        <li><strong>Navigation Bar:</strong> The navigation bar (<code>nav</code>) contains links (<code>&lt;a&gt;</code>) to various pages of the website, making it easy to navigate between sections like Home, Volunteer, Profile, etc. The <code>alt</code> attribute for the logo image (<code>&lt;img&gt;</code>) ensures that users with visual impairments can understand the content of the image via screen readers.</li>
+                        <li><strong>Team Section:</strong> The team section includes a main title (<code>&lt;h1&gt;</code>) and a subtitle (<code>&lt;h2&gt;</code>) describing the purpose of the page, followed by a grid layout to showcase team members. Each team member is represented in a card-style format (<code>&lt;div&gt;</code> with class <code>card-set</code>), which includes the member's image, name, role, and responsibilities.</li>
+                        <li><strong>Team Member Cards:</strong> Each team member is presented in a <code>card-set</code> with a profile picture (<code>&lt;img&gt;</code>) and a list of tasks (<code>&lt;ul&gt;</code>). The cards are styled to be visually interactive, using hover effects to enhance user engagement.</li>
+                    </ul>
+                
+                    <h3>2. CSS Styling:</h3>
+                    <ul>
+                        <li><strong>Grid Layout:</strong> The <code>team-grid</code> class uses CSS Grid to arrange the team cards in a responsive layout. The cards adjust based on the screen size, ensuring that they remain organized and readable on different devices.</li>
+                        <li><strong>Hover Effects:</strong> Each <code>card-set</code> has a hover effect that enlarges the profile image and elevates the card, giving a dynamic interaction to the user. The list of duties (<code>tasks</code>) is also animated to show or hide when the card is hovered.</li>
+                        <li><strong>Typography and Colors:</strong> The page uses a green color palette (<code>#228b22</code>) for text, titles, and button elements to maintain the environmental theme. The font family is set to <code>'Poppins'</code> to provide a modern and clean look.</li>
+                    </ul>
+                
+                    <h3>3. Accessibility Considerations:</h3>
+                    <ul>
+                        <li><strong>Alt Text for Images:</strong> All images in the team section have descriptive <code>alt</code> attributes, such as <code>alt="Nanduni Pathirana, Frontend Developer | Student 1"</code>, to provide meaningful descriptions for screen readers.</li>
+                        <li><strong>Keyboard Navigation:</strong> The <code>tabindex="0"</code> attribute is added to the <code>card-set</code> elements to make them focusable, ensuring that users can navigate through the team cards using the keyboard.</li>
+                        <li><strong>Focus Styles:</strong> The <code>:focus</code> pseudo-class is applied to <code>card-set</code> elements, giving them a visible outline when they are focused, improving accessibility for keyboard and assistive technology users.</li>
+                        <li><strong>Semantic HTML:</strong> The page uses semantic HTML tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> to ensure that the page structure is meaningful and easy to navigate with screen readers.</li>
+                        <li><strong>Responsive Design:</strong> The layout is responsive, adapting to smaller screen sizes using media queries. For instance, on smaller devices (<code>max-width: 1024px</code>), the team grid switches to a two-column layout, and on mobile (<code>max-width: 480px</code>), the layout switches to a single-column layout for better readability.</li>
+                    </ul>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html"> link to the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="feedback.html">click here to check feedback.</a></p>
+            </section>
+
+            <section>
+                <h2 id="team">team Page</h2>
+                    <h3>Technical Description</h3>
+
+                    <h3>1. HTML Structure:</h3>
+                    <ul>
+                        <li><strong>Navigation Bar:</strong> The navigation bar (<code>nav</code>) contains links (<code>&lt;a&gt;</code>) to various pages of the website, making it easy to navigate between sections like Home, Volunteer, Profile, etc. The <code>alt</code> attribute for the logo image (<code>&lt;img&gt;</code>) ensures that users with visual impairments can understand the content of the image via screen readers.</li>
+                        <li><strong>Team Section:</strong> The team section includes a main title (<code>&lt;h1&gt;</code>) and a subtitle (<code>&lt;h2&gt;</code>) describing the purpose of the page, followed by a grid layout to showcase team members. Each team member is represented in a card-style format (<code>&lt;div&gt;</code> with class <code>card-set</code>), which includes the member's image, name, role, and responsibilities.</li>
+                        <li><strong>Team Member Cards:</strong> Each team member is presented in a <code>card-set</code> with a profile picture (<code>&lt;img&gt;</code>) and a list of tasks (<code>&lt;ul&gt;</code>). The cards are styled to be visually interactive, using hover effects to enhance user engagement.</li>
+                    </ul>
+
+                    <h3>2. CSS Styling:</h3>
+                    <ul>
+                        <li><strong>Grid Layout:</strong> The <code>team-grid</code> class uses CSS Grid to arrange the team cards in a responsive layout. The cards adjust based on the screen size, ensuring that they remain organized and readable on different devices.</li>
+                        <li><strong>Hover Effects:</strong> Each <code>card-set</code> has a hover effect that enlarges the profile image and elevates the card, giving a dynamic interaction to the user. The list of duties (<code>tasks</code>) is also animated to show or hide when the card is hovered.</li>
+                        <li><strong>Typography and Colors:</strong> The page uses a green color palette (<code>#228b22</code>) for text, titles, and button elements to maintain the environmental theme. The font family is set to <code>'Poppins'</code> to provide a modern and clean look.</li>
+                    </ul>
+
+                    <h3>3. Accessibility Considerations:</h3>
+                    <ul>
+                        <li><strong>Alt Text for Images:</strong> All images in the team section have descriptive <code>alt</code> attributes, such as <code>alt="Nanduni Pathirana, Frontend Developer | Student 1"</code>, to provide meaningful descriptions for screen readers.</li>
+                        <li><strong>Keyboard Navigation:</strong> The <code>tabindex="0"</code> attribute is added to the <code>card-set</code> elements to make them focusable, ensuring that users can navigate through the team cards using the keyboard.</li>
+                        <li><strong>Focus Styles:</strong> The <code>:focus</code> pseudo-class is applied to <code>card-set</code> elements, giving them a visible outline when they are focused, improving accessibility for keyboard and assistive technology users.</li>
+                        <li><strong>Semantic HTML:</strong> The page uses semantic HTML tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> to ensure that the page structure is meaningful and easy to navigate with screen readers.</li>
+                        <li><strong>Responsive Design:</strong> The layout is responsive, adapting to smaller screen sizes using media queries. For instance, on smaller devices (<code>max-width: 1024px</code>), the team grid switches to a two-column layout, and on mobile (<code>max-width: 480px</code>), the layout switches to a single-column layout for better readability.</li>
+                    </ul>
+
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html">Include a link to the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="teams.html">click here to check team</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                       
+                    <h3>1. HTML Structure:</h3>
+                    <ul>
+                        <li><strong>Navigation Bar:</strong> The navigation bar is used to access different pages of the website, such as Home, Volunteer, and Statistics. It provides easy navigation with clearly labeled links. The logo image (<code>&lt;img&gt;</code>) has an <code>alt</code> attribute for screen readers to describe the image content, ensuring accessibility for visually impaired users.</li>
+                        <li><strong>Sidebar Navigation:</strong> The sidebar contains a vertical navigation menu (<code>&lt;nav&gt;</code>) with links to different sections of the page, allowing users to easily jump to specific content. This improves accessibility and user experience, particularly for users with mobility impairments.</li>
+                        <li><strong>Content Sections:</strong> The content is organized into sections with <code>&lt;section&gt;</code> tags, each with a clear heading (<code>&lt;h2&gt;</code>) to guide users through the text. This is especially helpful for screen readers to organize the content and navigate the sections.</li>
+                        <li><strong>Image Placeholders:</strong> Each section includes images to visually support the content. These images are contained within <code>&lt;div&gt;</code> elements with the <code>image-placeholder</code> class, ensuring that the layout remains responsive.</li>
+                    </ul>
+
+                    <h3>2. CSS Styling:</h3>
+                    <ul>
+                        <li><strong>Responsive Layout:</strong> The page uses a responsive layout, with content sections displayed in a two-column layout when viewed on larger screens and a single-column layout on smaller screens. This is achieved using media queries in the CSS, ensuring that the content is readable on all devices.</li>
+                        <li><strong>Hover Effects:</strong> The sidebar navigation links have a hover effect to provide visual feedback to users when interacting with the menu. This enhances user engagement and ensures a dynamic experience.</li>
+                        <li><strong>Color Scheme:</strong> The page uses green and neutral colors to align with the environmental theme, ensuring that text and background colors have a high contrast for readability. These choices also provide a clean and modern look.</li>
+                    </ul>
+
+                    <h3>3. Accessibility Considerations:</h3>
+                    <ul>
+                        <li><strong>Alt Text for Images:</strong> All images used on the page, such as in the introduction and conclusion sections, have descriptive <code>alt</code> attributes. This is vital for users who rely on screen readers to understand the content of the images.</li>
+                        <li><strong>Semantic HTML:</strong> The page uses semantic HTML tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code> to ensure proper structure. This improves accessibility by making the content more understandable to assistive technologies.</li>
+                        <li><strong>Navigation:</strong> The page is designed to be easily navigable via the keyboard, with clear tabbing order, especially within the sidebar and content sections. Users can use the <code>tab</code> key to navigate between links and form elements.</li>
+                        <li><strong>Focus Styles:</strong> The <code>:focus</code> pseudo-class is used to indicate the active element, making it easier for users with keyboard navigation to identify where they are on the page. This is especially useful for screen reader users and those who rely on keyboard navigation.</li>
+                        <li><strong>Forms and Buttons:</strong> The form elements, such as the text inputs and radio buttons, are properly labeled using <code>&lt;label&gt;</code> tags. This ensures that screen readers can properly announce each form element. Additionally, buttons have clear labels and a hover effect for better interaction.</li>
+                    </ul>
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content3.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+
+                <p><strong>Challenges:</strong></p>
+                <ul>
+                    <li><strong>Responsiveness:</strong> Implemented CSS media queries to ensure compatibility across devices.</li>
+                    <li><strong>Navigation Accessibility:</strong> Used semantic HTML and ARIA attributes for screen reader support.</li>
+                    <li><strong>Hover/Focus Effects:</strong> Ensured interactive elements were accessible via keyboard and screen readers.</li>
+                    <li><strong>Image Accessibility:</strong> Added alt attributes to all images for better accessibility.</li>
+                </ul>
+        
+                <p><strong>Lessons Learned:</strong></p>
+                <ul>
+                    <li><strong>Prioritize Accessibility:</strong> Accessibility should be prioritized early in development.</li>
+                    <li><strong>User-Centered Design:</strong> Ensured responsive design for all devices.</li>
+                    <li><strong>Performance:</strong> Optimized multimedia content for faster load times.</li>
+                    <li><strong>CSS Animations:</strong> Used simple animations for user engagement without impacting performance.</li>
+                    <li><strong>Cross-Browser Compatibility:</strong> Ensured consistent performance across all browsers.</li>
+                    <li><strong>Iterative Design:</strong> Regular testing and iteration improved usability.</li>
+                </ul>
+          
+                </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                <p>Our web pages have been designed with full compliance with Janet regulations to ensure accessibility, data security, and best practices in web publication.</p>
+
+                <h3>Key Compliance Areas:</h3>
+                <ul>
+                    <li><strong>Accessibility:</strong> All images have descriptive alt attributes for screen reader compatibility. We use semantic HTML tags for better navigation, ensuring accessibility for users with disabilities.</li>
+                    <li><strong>Security:</strong> Data collection forms are secure, and sensitive information is protected through HTTPS. We implement security measures to protect users' privacy and data.</li>
+                    <li><strong>Content Accuracy:</strong> Content is regularly updated to reflect accurate and truthful information, adhering to guidelines for truthful online communication.</li>
+                    <li><strong>Data Handling:</strong> We follow data protection policies, collecting only the necessary data from users and ensuring that their privacy is maintained in accordance with applicable regulations.</li>
+                    <li><strong>Responsive Design:</strong> We ensure our pages are fully responsive and accessible across all devices, complying with Janet’s requirements for device compatibility.</li>
+                </ul>
+        
+                <p>By following these guidelines, we ensure that our website is compliant with Janet's standards and is accessible to all users, regardless of their abilities or devices.</p>
+            </section>
+
+            
+            <section>
+                <h2 id="ref">References</h2>
+                <ul class="ref">
+                    <li>
+                        <strong>MND Web Docs - element.scrollntoView().</strong> How To Build a Website. <em>[online]</em> developer.mozilla.org. 
+                        Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView</a>.
+                    </li>
+                    <li>
+                        <strong>Dribbble.</strong> Table designs. <em>[online]</em> developer.mozilla.org. 
+                        Available at: <a href="https://dribbble.com/tags/table" target="_blank">https://dribbble.com/tags/table</a>.
+                    </li>
+                </ul>
+            </section>
+            
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+        <ul class="top-level-ul">
+            <li>Student 2</li>
+            <!-- This nested <ul> should be replaced with a new <ul> -->
+        </ul>
+        
+        <!-- New separate <ul> to structure the links correctly -->
+        <ul>
+            <li><a href="../qualityeduindex.html">Home page</a></li>
+            <li><a href="../table.html">Statistics page</a></li>
+            <li><a href="../Content.html">Content page</a></li>
+        </ul>
+        
+        <ul>
+            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#ref">References</a></li>
+        </ul>
+        </aside>
+    </div>
+
+    <!-- Footer consistent with the rest of the pages -->
+    <footer class="swasth-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Quality Education</h3>
+                <p style="color:white;">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</p>
+            </div>
+            <div class="footer-columns">
+                <div class="links-section">
+                    <div class="links-group">
+                        <h4>Links</h4>
+                        <div class="links-grid">
+                            <div class="link-column">
+                               <a href="qualityeduindex.html">Home</a>
+                                <a href="aboutus.html">About us</a>
+                                <a href="volunteer.html">Volunteer</a>
+                                <a href="table.html">Table</a>
+                                <a href="userprofile.html">Profile</a>
+                                <a href="feedback.html">Feedback</a>
+                                <a href="sitemap.html">Sitemap</a>
+                                <a href="teams.html">Team</a>
+                                <a href="Content.html">Content</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editors-group">
+                        <h4>Editors</h4>
+                        <div class="editor-links">
+                           <a href="pageEditor_ST1.html">Student 1</a>
+                            <a href="pageEditor_ST2.html">Student 2</a>
+                            <a href="pageEditor_ST3.html">Student 3</a>
+                            <a href="pageEditor_ST4.html">Student 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright ©2024-Swasth, All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

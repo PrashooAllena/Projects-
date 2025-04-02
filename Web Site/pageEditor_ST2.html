@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <title>Quality Education</title>
+	<link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+
+</head>
+<body>
+ 
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+    <div class="home-wrapper">
+        <div class="logo-container">
+            <img src="images/image-removebg-preview1.png" alt="Logo">
+            <span class="logo-name">Global Goals</span>
+        </div>
+
+    <header id="top">
+        <h1>Quality <span>Education</span></h1>
+    </header>
+
+    <section class="stud">
+        <h2>Basim, student 2</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="Home Page">Home Page</h2>
+                <h2>Technical Description</h2>
+
+                <h3>1. HTML Structure:</h3>
+                <ul>
+                    <li><strong>Navigation Bar (<code>&lt;nav class="nav-bar"&gt;</code>):</strong>  
+                        - A fixed navigation bar provides a user-friendly menu.  
+                        - Includes a <code>&lt;img&gt;</code> for the logo and a title inside <code>&lt;div class="title"&gt;</code> for branding.  
+                        - Navigation links are structured using <code>&lt;div class="tab"&gt;</code>, each containing an <code>&lt;a&gt;</code> tag for seamless navigation.  
+                    </li>
+
+                    <li><strong>Hero Section (<code>&lt;header&gt;</code>):</strong>  
+                        - Features a background video using the <code>&lt;video&gt;</code> tag for an immersive experience.  
+                        - A semi-transparent overlay (<code>&lt;div class="header-overlay"&gt;</code>) ensures readability.  
+                        - Headings (<code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code>) create a strong call to action.  
+                        - A call-to-action button (<code>&lt;a class="cta-button"&gt;Join Us Now&lt;/a&gt;</code>) directs users to the volunteer page.  
+                    </li>
+
+                    <li><strong>Content Sections:</strong>
+                        <ul>
+                            <li><strong>Volunteer Section:</strong>  
+                                - Introduces the mission to combat climate change.  
+                                - Includes a descriptive paragraph, an image (<code>&lt;img&gt;</code>), and a button (<code>&lt;button&gt;</code>) for user interaction.  
+                                - Uses the <code>onclick</code> event handler to navigate to the volunteer page.  
+                            </li>
+
+                            <li><strong>Content Cards (<code>.card-container</code>):</strong>  
+                                - Contains interactive cards, each linking to climate-related topics like Renewable Energy and Deforestation.  
+                                - Cards use the <code>&lt;a class="card"&gt;</code> tag for navigation.  
+                                - A hover effect (<code>:hover</code>) adds a slight elevation for a dynamic experience.  
+                            </li>
+
+                            <li><strong>Quote of the Day Section:</strong>  
+                                - Displays an inspirational quote inside a <code>&lt;blockquote&gt;</code> for semantic meaning.  
+                                - Uses the <code>quote-marks</code> class to style large punctuation marks for emphasis.  
+                            </li>
+
+                            <li><strong>Video Section:</strong>  
+                                - Features a climate awareness video using the <code>&lt;video&gt;</code> tag.  
+                                - Includes controls for play, pause, and volume adjustment.  
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Footer Section:</strong>  
+                        - Includes navigation links, contact details (email & phone), and social media icons.  
+                        - Features a newsletter subscription form for user engagement.  
+                        - Uses icons (<code>&lt;i class="fab fa-facebook-f"&gt;</code>, <code>&lt;i class="fab fa-twitter"&gt;</code>) for social links.  
+                        - Displays a copyright statement at the bottom.  
+                    </li>
+                </ul>
+
+            
+                <h3>2. CSS Styling:</h3>
+                <ul>
+                    <li><strong>Flexbox Layout:</strong> The website utilizes Flexbox for efficient alignment and spacing of elements like <code>.grid-container</code> and <code>.navigation-bar</code>. This ensures a dynamic and structured layout that adapts smoothly to different screen sizes.</li>
+                    <li><strong>Hover Effects:</strong> Media queries enable an adaptive design where <code>.content-section</code> restructures itself based on device width. Images and videos are optimized with <code>max-width: 100%</code> to maintain proportional scaling across all screens.</li>
+                    <li><strong>Colors and Readability:</strong> A modern, accessible color scheme is used, ensuring contrast and clarity. The primary color set (#2176ae, #1a5276) is chosen to complement an educational theme. High contrast between text and backgrounds improves readability for all users, including those with visual impairments.</li>
+                </ul>
+            
+                <h3>3. Accessibility Considerations:</h3>
+                <ul>
+                    <li><strong>Alt Text for Images:</strong> Descriptive <code>alt</code> attributes are included for all images, such as <code>alt="Climate Changers Logo"</code>, ensuring screen readers can convey meaningful context to visually impaired users.</li>
+                    <li><strong>Video Accessibility:</strong> The video element includes a fallback message ("Your browser does not support the video tag") for users with unsupported browsers. Adding captions or subtitles is recommended for better accessibility for hearing-impaired users.</li>
+                    <li><strong>Headings and Structure:</strong> Semantic HTML tags like <code>h1</code>, <code>h2</code>, <code>h3</code>, and <code>footer</code> improve content organization and readability for screen readers. Clear section headings make navigation easier for all users.</li>
+                    <li><strong>Buttons and Links:</strong> Interactive elements, such as buttons and links, are visually distinct and include hover effects. Descriptive link text (e.g., "Learn More" and "Join Us Now") improves usability for screen readers.</li>
+                    <li><strong>Keyboard Navigation:</strong>  The website is fully navigable using a keyboard. Users can tab through links, buttons, and form elements. The <code>tabindex="0"</code> attribute ensures that interactive elements remain accessible for keyboard users.</li>
+                    <li><strong>Form Accessibility:</strong> Forms (such as the newsletter signup) include properly associated labels with input fields, ensuring compatibility with screen readers and improving usability for all users.</li>
+                </ul>
+
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST2.html">Click here to access the validation page</a></p>
+            
+                <h3>Link to the page</h3>
+                <p><a href="qualityeduindex.html">Click here to visit the home page</a>.</p>
+            </section>
+                    
+
+
+            <section>
+                <h2 id="statistic">Statistic Page</h2>
+        
+                <h2>Technical Description</h2>
+                <h3>1. HTML Structure:</h3>
+                <ul>
+                    <li><strong>Navigation Bar (nav-bar):</strong> The navigation bar (<code>nav</code>) contains links (<code>&lt;a&gt;</code>) to different pages of the website such as Home, Volunteer, Profile, etc. It allows users to navigate easily to various parts of the site. The navigation is visually structured with <code>&lt;div&gt;</code> elements to separate the logo and links for better organization. The <code>alt</code> attribute for the logo image (<code>&lt;img&gt;</code>) is set to "Climate Changers Logo" to enhance accessibility for screen readers, which is a good practice for users with visual impairments.</li>
+                    <li><strong>Header Section:</strong> The <code>&lt;header&gt;</code> includes a background video (<code>&lt;video&gt;</code>) that plays automatically and loops. The video is used to grab attention, highlighting the theme of the website — combating climate change. The header includes a main title (<code>&lt;h1&gt;</code>) "Climate Change Statistics" and a subtitle (<code>&lt;h2&gt;</code>) with a message "Global Warming is a Global Warning". These elements provide a clear introductory context to the website. The header also contains a call-to-action (CTA) button (<code>&lt;a href="volunteer.html" class="cta-button"&gt;Join Us Now&lt;/a&gt;</code>), encouraging users to volunteer.</li>
+                    <li><strong>Table Section:</strong> This section displays the key climate data in a table format. The <code>&lt;table&gt;</code> element is used to organize the data into rows and columns. The table also contains <code>&lt;caption&gt;</code> to describe the data in the table and <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code> sections for better organization. The table data includes indicators like CO₂ emissions, temperature rise, and extreme weather events.</li>
+                    <li><strong>Chart Section:</strong> This section visualizes global CO₂ emissions over time using a line chart rendered with <code>Chart.js</code>. The chart includes zoom and pan functionality provided by the <code>chartjs-plugin-zoom</code> plugin. A reset zoom button is available for users to reset the chart view.</li>
+                    <li><strong>Video Section:</strong> The video section allows users to watch a video titled "Are We Already Doomed?". It uses the <code>&lt;video&gt;</code> tag with controls so users can play, pause, and adjust the volume. This section visually supplements the content with a video related to the impact of climate change.</li>
+                    <li><strong>Footer Section:</strong> The footer includes links to other pages of the site, such as Home, Volunteer, Statistics, and Privacy Policy. It also includes contact information, social media links, and a newsletter subscription form.</li>
+                </ul>
+
+                <h3>2. CSS Styling:</h3>
+                <ul>
+                    <li><strong>Table Layout:</strong> The table is designed with proper spacing between rows and columns for clarity. It has alternating row colors for better readability. The table is responsive, with horizontal scrolling enabled on smaller screens using <code>overflow-x: auto</code>.</li>
+                    <li><strong>Chart Styling:</strong> The chart is made responsive and visually appealing, with custom colors and tooltips. The chart’s line and points are styled with green shades to match the environmental theme. The chart supports zooming and panning to explore data more interactively.</li>
+                    <li><strong>Video Styling:</strong> The video container is styled with rounded corners and a shadow effect to ensure it blends well with the rest of the content. It is also responsive and adjusts for different screen sizes.</li>
+                    <li><strong>Hover Effects:</strong> The cards in the content section have hover effects, making them elevate and create an interactive feel. The hover effect adds an extra layer of user engagement.</li>
+                    <li><strong>Colors and Readability:</strong> The green color palette (<code>#228b22</code>, <code>#1b691b</code>) is used throughout the website to create a visually cohesive theme related to the environment. High contrast is maintained for readability, and dark text on light backgrounds enhances accessibility.</li>
+                </ul>
+
+                <h3>3. Accessibility Considerations:</h3>
+                <ul>
+                    <li><strong>Alt Text for Images:</strong> All images, such as the logo and table images, include descriptive <code>alt</code> attributes like <code>alt="Climate Changers Logo"</code>, which ensures that screen readers can provide context for users who are visually impaired.</li>
+                    <li><strong>Video Accessibility:</strong> The video includes a fallback message ("Your browser does not support the video tag"). It is recommended to add captions/subtitles for the video to ensure hearing-impaired users can also engage with the content.</li>
+                    <li><strong>Table Accessibility:</strong> The table includes clear headers and captions that help screen readers interpret the data. It is structured with <code>&lt;th&gt;</code> elements for column titles and <code>&lt;td&gt;</code> elements for data points.</li>
+                    <li><strong>Buttons and Links:</strong> Buttons and links are visually distinct, with clear hover effects that help users identify interactive elements. Descriptive text is used in buttons like "Learn More" and "Join Us Now" to improve accessibility.</li>
+                    <li><strong>Keyboard Navigation:</strong> The website is designed to be fully navigable using a keyboard. Users can tab through links, buttons, and form elements. The <code>tabindex="0"</code> attribute is used in elements to ensure they are included in the tab order.</li>
+                </ul>
+
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST2.html">Click here to access the validation page</a></p>
+            
+                <h3>Link to the page</h3>
+                <p><a href="table.html">Click here to visit the Statistics page</a>.</p>
+            </section>
+            
+            
+            <section>
+                <h2 id="quality-education">Quality Education</h2>
+            
+                <h2>Technical Description</h2>
+                <h3>1. HTML Structure:</h3>
+                <ul>
+                    <li><strong>Navigation Bar (nav):</strong> The navigation bar (<code>&lt;nav&gt;</code>) is fixed at the top-right of the page, containing links (<code>&lt;a&gt;</code>) that allow users to navigate to the Home page. The navigation bar is styled with a red background, rounded corners, and a box shadow for a modern look. The active link is highlighted with a color change on hover.</li>
+                    <li><strong>Header Section:</strong> The header includes a main title (<code>&lt;h1&gt;</code>) "Quality Education" that emphasizes the focus of the page. The background image used behind the text adds visual appeal. The <code>&lt;h1&gt;</code> is styled with a serif font for a more academic look.</li>
+                    <li><strong>Container Section:</strong> The main content is housed in a container (<code>&lt;div class="container"&gt;</code>) which includes the body of the page. This section contains the introduction to education, its barriers, and the solutions to overcome them. It uses an elegant layout with shadow and border-radius effects for modern aesthetics.</li>
+                    <li><strong>Content Images:</strong> Images are included in the content using <code>&lt;img&gt;</code> tags. These images are styled to have smooth hover effects (zoom effect) when the user interacts with them, providing a more engaging experience.</li>
+                    <li><strong>Barriers to Quality Education:</strong> A section highlighting major challenges such as inadequate access to education, gender inequality, infrastructure issues, poverty, and political instability. This section is organized with headings (<code>&lt;h3&gt;</code>) to distinguish each barrier.</li>
+                    <li><strong>Footer Section:</strong> The footer section is left blank, but it can be used to include contact information, social media links, or additional navigation links.</li>
+                </ul>
+            
+                <h3>2. CSS Styling:</h3>
+                <ul>
+                    <li><strong>Background and Typography:</strong> The background image of the page is used for visual appeal, while the text is kept readable with sufficient contrast and appropriate font sizes. The primary font used is 'Poppins', with serif fonts like 'Lora' used for headings to create an academic theme.</li>
+                    <li><strong>Container Layout:</strong> The container is styled with a white background, rounded corners, and a subtle box shadow to create a card-like effect. It has padding and margin for spacing, and a z-index is used to ensure it appears above other elements.</li>
+                    <li><strong>Hover Effects:</strong> Images have a subtle zoom effect (<code>transform: scale(1.03)</code>) when hovered over, giving a modern interactive feel. Links are styled with hover effects that change color to enhance user interaction.</li>
+                    <li><strong>Separator Styling:</strong> The separators (<code>&lt;div class="separator"&gt;</code>) are styled with a linear gradient background to visually separate sections. These sections also use slight opacity for a smooth transition effect.</li>
+                </ul>
+            
+                <h3>3. Accessibility Considerations:</h3>
+                <ul>
+                    <li><strong>Alt Text for Images:</strong> All images used in the page include <code>alt</code> attributes for accessibility, such as <code>alt="Education Image"</code>, ensuring the content is accessible for screen readers.</li>
+                    <li><strong>Header and Section Headings:</strong> The page uses clear and descriptive headings like <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;h3&gt;</code> to improve the logical structure of the content for better navigation.</li>
+                    <li><strong>Link Accessibility:</strong> Links are styled with enough contrast and clarity to ensure they are easily distinguishable for all users. Links also include descriptive text for better understanding, such as "Learn More" or "Click here to visit the Statistics page."</li>
+                    <li><strong>Keyboard Navigation:</strong> The website ensures all interactive elements such as links and buttons are navigable via keyboard. The <code>tabindex</code> attribute is used where necessary.</li>
+                </ul>
+            
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST2.html">Click here to access the validation page</a></p>
+            
+                <h3>Link to the page</h3>
+                <p><a href="Content2.html">Click here to visit the Statistics page</a>.</p>
+            </section>
+            
+            
+
+            <section>
+                <h2 id="ref">References</h2>
+                <ul class="ref">
+                    <li>
+                        <strong>MND Web Docs - element.scrollntoView().</strong> How To Build a Website. <em>[online]</em> developer.mozilla.org. 
+                        Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView</a>.
+                    </li>
+                    <li>
+                        <strong>Dribbble.</strong> Table designs. <em>[online]</em> developer.mozilla.org. 
+                        Available at: <a href="https://dribbble.com/tags/table" target="_blank">https://dribbble.com/tags/table</a>.
+                    </li>
+                </ul>
+            </section>
+            
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+        <ul class="top-level-ul">
+            <li>Student 2</li>
+            <!-- This nested <ul> should be replaced with a new <ul> -->
+        </ul>
+        
+        <!-- New separate <ul> to structure the links correctly -->
+        <ul>
+            <li><a href="./qualityeduindex.html">Home page</a></li>
+            <li><a href="./table.html">Statistics page</a></li>
+            <li><a href="./Content.html">Content page</a></li>
+        </ul>
+        
+        <ul>
+            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#ref">References</a></li>
+        </ul>
+        </aside>
+    </div>
+
+    <footer class="swasth-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Quality Education</h3>
+                <p style="color:white;">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</p>
+            </div>
+            <div class="footer-columns">
+                <div class="links-section">
+                    <div class="links-group">
+                        <h4>Links</h4>
+                        <div class="links-grid">
+                            <div class="link-column">
+                               <a href="qualityeduindex.html">Home</a>
+                                <a href="aboutus.html">About us</a>
+                                <a href="volunteer.html">Volunteer</a>
+                                <a href="table.html">Table</a>
+                                <a href="userprofile.html">Profile</a>
+                                <a href="feedback.html">Feedback</a>
+                                <a href="sitemap.html">Sitemap</a>
+                                <a href="teams.html">Team</a>
+                                <a href="Content.html">Content</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editors-group">
+                        <h4>Editors</h4>
+                        <div class="editor-links">
+                           <a href="pageEditor_ST1.html">Student 1</a>
+                            <a href="pageEditor_ST2.html">Student 2</a>
+                            <a href="pageEditor_ST3.html">Student 3</a>
+                            <a href="pageEditor_ST4.html">Student 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright ©2024-Swasth, All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

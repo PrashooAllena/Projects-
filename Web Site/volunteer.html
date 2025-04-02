@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Opportunities</title>
+	<link rel="stylesheet" href="global.css"> 
+    <link rel="stylesheet" href="css/volunteer.css">
+	<style>
+		/* Background */
+body {
+    background-image: url("../images/library.jpeg");
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-blend-mode: multiply;
+    background-color: #dddddded;
+}
+/* Main Content Container */
+.wrapper {
+    max-width: 1200px;
+    margin: 100px auto 50px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the volunteer cards container */
+.volunteer-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Styles for individual volunteer cards */
+.volunteer-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Animation on hover */
+.volunteer-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image style inside the card */
+.volunteer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #b00000;
+}
+
+/* Style for content inside card */
+.card-content {
+    padding: 20px;
+}
+
+/* Tag container style */
+.tags {
+    margin: 15px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Individual tag styles */
+.tag {
+    background: #ffe6e6;
+    color: #b00000;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Details button style */
+.details-button {
+    background: #b00000;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+}
+
+/* Details button hover effect */
+.details-button:hover {
+    background: #ff4444;
+}
+
+/* Ratings Section */
+.review-cards {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Individual review cards */
+.review-card {
+    background: white;
+    padding: 20px;
+    border-left: 4px solid #b00000;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Feedback Form Styling */
+#feedback-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Feedback form textarea */
+#feedback-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    min-height: 120px;
+    margin: 20px 0;
+    transition: border-color 0.3s ease;
+}
+
+/* Textarea focus styles */
+#feedback-form textarea:focus {
+    border-color: #b00000;
+    outline: none;
+}
+
+/* Rating input container style */
+.rating-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Style for rating input buttons */
+.rating-input button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+/* Hover and active state for rating buttons */
+.rating-input button:hover,
+.rating-input button.active {
+    color: #ffd700;
+}
+
+/* Container to separate submit and cancel buttons */
+#feedback-form .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Submit button styles */
+#feedback-form button[type="submit"] {
+    background: #b00000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    /* width: 100%;  Remove width: 100% here, so they can be side-by-side */
+}
+
+/* Submit button hover effect */
+#feedback-form button[type="submit"]:hover {
+    background: #ff4444;
+}
+
+/* Style for the cancel button */
+#feedback-form button[type="reset"] {
+    background: #888;
+    /* Grey background */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+/* Cancel button hover style */
+#feedback-form button[type="reset"]:hover {
+    background: #aaa;
+}
+
+/* Hover states for buttons */
+#feedback-form button[type="submit"]:hover,
+#feedback-form button[type="reset"]:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+	</style>
+</head>
+
+<body>
+    <!-- Header contains navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="qualityeduindex.html">Home</a></li>
+                <li><a href="about%20us.html">About us</a></li>
+                <li><a href="volunteer.html" class="active">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userprofile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="teams.html">Team</a>
+                <li><a href="content.html">Content</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content area -->
+    <main class="wrapper">
+        <!-- Volunteer opportunities section -->
+        <section id="volunteer-opportunities">
+            <h2>Volunteer Opportunities in Quality Education</h2>
+            <!-- Filter options for volunteer cards -->
+            <div class="filter-dropdown">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="most-popular">Most Popular</option>
+                    <option value="newest">Newest</option>
+                    <option value="highest-rated">Highest Rated</option>
+                </select>
+            </div>
+
+            <!-- Container for volunteer cards -->
+            <div class="volunteer-cards">
+                <!-- Individual volunteer card -->
+                <div class="volunteer-card">
+                    <img src="images/bali.jpeg" alt="Bali English Teaching Volunteers">
+                    <div class="card-content">
+                        <h3>Bali English Teaching Volunteers</h3>
+                        <p class="location">Tabanan, Indonesia</p>
+                        <p class="rating">Outstanding 4.9 <span class="review-count">(1324)</span></p>
+                        <div class="tags">
+                            <span class="tag">Popular</span>
+                            <span class="tag">Video</span>
+                            <span class="tag">Flex Option</span>
+                        </div>
+                        <p class="details">Teach English in this amazing location set amongst rice paddies and local
+                            culture. Invest your time in Bali's children and ensure their future is bright!</p>
+                    
+						<a href="bali_details.html" class="details-button">DETAILS</a>
+                    </div>
+                </div>
+
+                <div class="volunteer-card">
+                    <img src="images/nepal.jpeg" alt="Nepal English Teaching to Monks">
+                    <div class="card-content">
+                        <h3>Nepal English Teaching to Monks</h3>
+                        <p class="location">Kathmandu, Nepal</p>
+                        <p class="rating">Outstanding 4.9 <span class="review-count">(1324)</span></p>
+                        <div class="tags">
+                            <span class="tag">Popular</span>
+                            <span class="tag">Video</span>
+                            <span class="tag">Flex Option</span>
+                        </div>
+                        <p class="details">Make an impact during your time in this country. Teaching in a classroom and
+                            informal setting as you live with Monks for a truly immersive experience.</p>
+                        <a href="nepal_details.html" class="details-button">DETAILS</a>
+                    </div>
+                </div>
+
+                <div class="volunteer-card">
+                    <img src="images/srilanka.jpeg" alt="Sri Lanka English Teaching Volunteers">
+                    <div class="card-content">
+                        <h3>Sri Lanka English Teaching Volunteers</h3>
+                        <p class="location">Ambalangoda, Sri Lanka</p>
+                        <p class="rating">Outstanding 4.9 <span class="review-count">(1324)</span></p>
+                        <div class="tags">
+                            <span class="tag">Popular</span>
+                            <span class="tag">Video</span>
+                            <span class="tag">Flex Option</span>
+                        </div>
+                        <p class="details">Teach Buddhist Monks or children whose family experienced the Tsunami. English
+                            is a valuable skill that will greatly enhance their career prospects.</p>
+                        <a href="vietnam_details.html" class="details-button">DETAILS</a>
+                    </div>
+                </div>
+                <div class="volunteer-card">
+                    <img src="images/africa.jpeg" alt="South Africa Teaching">
+                    <div class="card-content">
+                        <h3>Teaching at Primary School</h3>
+                        <p class="location">Cape Town, South Africa</p>
+                        <p class="rating">Outstanding 4.7 <span class="review-count">(193)</span></p>
+                        <div class="tags">
+                            <span class="tag">Brilliant</span>
+                            <span class="tag">Video</span>
+                            <span class="tag">Flex Option</span>
+                        </div>
+                        <p class="details">Volunteer with children aged 6-13 years (Grade R-7) as a teacher's assistant
+                            at a primary school in Cape Town. Make your travel to South Africa meaningful!</p>
+                        <a href="tanzania_details.html" class="details-button">DETAILS</a>
+                    </div>
+                </div>
+                <div class="volunteer-card">
+                    <img src="images/ghana.jpeg" alt="Ghana Support">
+                    <div class="card-content">
+                        <h3>Ghana Primary School Support</h3>
+                        <p class="location">Abetifi, Ghana</p>
+                        <p class="rating">Excellent 4.8 <span class="review-count">(248)</span></p>
+                        <div class="tags">
+                            <span class="tag">Brilliant</span>
+                            <span class="tag">Video</span>
+                            <span class="tag">Flex Option</span>
+                        </div>
+                        <p class="details">Support with children aged 6-13 years (Grade R-7) as a volunteer in Abetifi
+                            primary school. Make your travel to Ghana more meaningful!</p>
+                        <button class="details-button">Details</button>
+                    </div>
+                </div>
+                <div class="volunteer-card">
+                    <img src="images/costarica.jpeg" alt="Costa Rica Teacher">
+                    <div class="card-content">
+                        <h3>Kids English Teacher</h3>
+                        <p class="location">Matapalo, Costa Rica</p>
+                        <p class="rating">Outstanding 4.9 <span class="review-count">(55)</span></p>
+                        <div class="tags">
+                            <span class="tag">Brilliant</span>
+                            <span class="tag">Flex Option</span>
+                        </div>
+                        <p class="details">Teacher to kids in Matapalo. Make your travel to Costa Rica more impactful!!
+                        </p>
+                        <button class="details-button">Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ratings and reviews section -->
+        <section id="ratings-reviews">
+            <h2>Ratings and Reviews</h2>
+            <div class="overall-rating">
+                <h3>Overall Rating: 9.4/10 Exceptional</h3>
+                <p>Based on 109 reviews</p>
+            </div>
+
+            <div class="review-cards">
+                <div class="review-card">
+                    <h3>10/10 Excellent</h3>
+                    <p>Wir hatten einen tollen 4-tägigen Aufenthalt mit zwei Erwachsenen und drei Kindern im Alter von 6 bis
+                        12 Jahren. Enrico hat uns supernett empfangen un...</p>
+                    <p class="reviewer">Daniela G. - Aug 12, 2019 - <a href="#">See More</a></p>
+                </div>
+                <div class="review-card">
+                    <h3>10/10 Excellent</h3>
+                    <p>We booked for 10 days and found Enrico to be very accommodating. We needed an extra mattress and
+                        chair and he sorted those immediately for us. Although small...</p>
+                    <p class="reviewer">Dr Jean M B. - Aug 16, 2018 - <a href="#">See More</a></p>
+                </div>
+
+            </div>
+            <a href="#" class="all-reviews-link">See all 109 reviews</a>
+        </section>
+
+        <!-- Feedback form section -->
+        <section id="feedback-form">
+            <h2>Send us your review</h2>
+            <form id="reviewForm">
+                <textarea id="reviewText"
+                    placeholder="Got suggestions? We'd love to hear them! (Optional)"></textarea>
+                <div class="rating-input">
+                    <span>Rate us:</span>
+                    <button>⭐</button>
+                    <button>⭐</button>
+                    <button>⭐</button>
+                    <button>⭐</button>
+                    <button>⭐</button>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Submit Feedback</button>
+                    <button type="reset">Cancel</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <!-- Footer contains copyright information -->
+    <footer class="footer">
+        <p>© 2025 Global Goals. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

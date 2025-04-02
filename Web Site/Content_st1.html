@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality Education</title>
+  <link rel="stylesheet" href="global.css">
+</head>
+<style>
+	/* General Styles  */
+section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Heading  */
+  section h2 {
+    margin-bottom: 15px;
+    color: #dc2635; 
+  }
+  
+  /* Image  */
+  section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Back to Top Button  */
+  .back-to-top {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #970606; 
+    color: #260401; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    background-color: #970606; 
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Internal Navigation Styling (Specific to #internalNav) */
+  #internalNav {
+    position: sticky;
+    top: 20px;
+    right: auto;
+    float: right;
+    margin-left: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    z-index: auto;
+  }
+  
+  #internalNav h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #260401;
+    text-align: left;
+  }
+  
+  #internalNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block; 
+  }
+  
+  #internalNav li {
+    margin-bottom: 8px;
+  }
+  
+  #internalNav a {
+    display: block;
+    padding: 8px 12px;
+    background-color: #970606; 
+    color: #f8f4f4;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal; 
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #internalNav {
+      position: static; /* or relative */
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+      float: none;
+    }
+  
+    #internalNav ul {
+      display: flex; /* Restore flex display for responsive behavior */
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    #internalNav li {
+      margin-bottom: 5px;
+    }
+  }
+  .main-title {
+    color: white;
+    text-align: center;
+    padding: 20px; 
+    background-color: #a6192e;  
+    margin: 0;      
+}
+  
+</style>
+<body>
+  <header>
+    <h1 class="main-title">Quality Education</h1>
+  </header>
+
+  <main>
+          <!-- Internal Navigation Menu -->
+          <nav id="internalNav">
+        <h2>Page Contents</h2>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#importance">Importance of Quality Education</a></li>
+          <li><a href="#challenges">Challenges in Achieving Quality Education</a></li>
+          <li><a href="#solutions">Possible Solutions</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Introduction Section -->
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Quality education is a fundamental human right and a cornerstone of sustainable development. It
+          encompasses access to inclusive and equitable learning opportunities that empower individuals with
+          the knowledge, skills, and values necessary to thrive in a rapidly changing world. Quality education
+          is not merely about acquiring information; it is about fostering critical thinking, creativity, and a
+          lifelong love of learning.</p>
+        <img src="images/learning.jpeg" alt="Image of Children Learning">
+      </section>
+      
+      <!-- Importance Section -->
+      <section id="importance">
+        <h2>Importance of Quality Education</h2>
+        <p>Quality education plays a pivotal role in individual empowerment, societal progress, and economic
+          development. It equips individuals with the tools to make informed decisions, participate actively in
+          their communities, and contribute to the workforce. Moreover, quality education promotes social
+          mobility, reduces inequality, and fosters a culture of innovation and entrepreneurship. It also supports
+          achieving other sustainable development goals by enhancing health outcomes, promoting gender
+          equality, and building peaceful and inclusive societies.</p>
+        <img src="images/entrepreneur.jpeg" alt="Economic Growth through Education">
+      </section>
+
+       <!-- Challenges Section -->
+      <section id="challenges">
+        <h2>Challenges in Achieving Quality Education</h2>
+        <p>Despite the global recognition of the importance of quality education, numerous challenges hinder its
+          attainment. These challenges include:
+        </p>
+        <ul>
+          <li>Poverty and inequality</li>
+          <li>Lack of qualified teachers and resources</li>
+          <li>Conflicts and disasters</li>
+          <li>Gender disparities</li>
+        </ul>
+        <img src="images/rural.jpeg" alt="Challenge: Lack of Resources in Rural School">
+
+      </section>
+      
+      <!-- Solutions Section -->
+      <section id="solutions">
+        <h2>Possible Solutions</h2>
+        <p>Addressing the challenges requires a multi-faceted approach involving governments, international
+          organizations, civil society, and the private sector. Possible solutions include:</p>
+        <ul>
+          <li>Increasing funding for education</li>
+          <li>Investing in teacher training and professional development</li>
+          <li>Promoting innovative learning methods</li>
+          <li>Engaging communities in education governance</li>
+          <li>Leveraging technology to expand access to quality learning resources</li>
+        </ul>
+        <img src="images/solution.jpeg" alt="Solutions for lack of quality education">
+      </section>
+    <!-- Back to Top Link -->
+    <a href="#" class="back-to-top">Back to Top</a>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© [Your Name]. All rights reserved.</p>
+  </footer>
+
+  <script>
+    //  Back to Top functionality
+    document.querySelector('.back-to-top').addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+
+</html>

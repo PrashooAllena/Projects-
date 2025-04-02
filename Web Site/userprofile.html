@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Global Goals - Profile</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        /* userprofile.html Specific Styles */
+
+        /* Profile Container */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 50px auto 50px;
+            gap: 2rem;
+            padding: 2rem;
+            flex: 1;
+            padding: 75px 100px 75px;
+            border-radius: 1.0%;
+        }
+
+        /* Profile Sidebar */
+        .profile-sidebar {
+            width: 300px;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            border: 3px solid var(--primary-red);
+        }
+
+        .personal-info li {
+            list-style: none;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #9e6363;
+            border-radius: 5px;
+            color: white;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            background: #f8f8f8;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .progress-bar {
+            height: 12px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background: var(--primary-red);
+        }
+
+        /* Main Content Sections */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-card h2 {
+            color: var(--dark-red);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary-red);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Contact Form */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--primary-red);
+            outline: none;
+        }
+
+        .btn {
+        }
+
+        .btn:hover {
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .profile-sidebar {
+                width: 100%;
+            }
+        }
+        .heading1 {
+            text-align: center;
+            margin-top: 40px;
+            color: #b00000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="qualityeduindex.html" >Home</a></li>
+                <li><a href="aboutus.html" >About us</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userprofile.html"  class="active">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="teams.html">Team</a>
+                <li><a href="content.html">Content</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Profile Sidebar -->
+        <aside class="profile-sidebar">
+            <img src="images/noimage.png" alt="Profile" class="profile-img">
+            <h1>Your name</h1>
+            
+            <div class="personal-info">
+                <ul>
+                    <li><strong>Age:</strong></li>
+                    <li><strong>Role:</strong> </li>
+                    <li><strong>Location:</strong></li>
+                </ul>
+            </div>
+
+            <div class="skills-container">
+                <h3>Skills</h3>
+                <div class="skill">
+                    <div class="skill-name">Communication</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+
+                </div>
+                <!-- Add other skills similarly -->
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="section-card">
+                <h2>About Me</h2>
+                <p>Text here</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Goals</h2>
+                <ul class="goals-list">
+                    <li>Text here</li>
+                    <!-- Add other goals -->
+                </ul>
+            </section>
+
+            <section class="section-card">
+                <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer class="swasth-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Quality Education</h3>
+                <p style="color:white;">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</p>
+            </div>
+            <div class="footer-columns">
+                <div class="links-section">
+                    <div class="links-group">
+                        <h4>Links</h4>
+                        <div class="links-grid">
+                            <div class="link-column">
+                                <a href="qualityeduindex.html">Home</a>
+                                <a href="aboutus.html">About us</a>
+                                <a href="volunteer.html">Volunteer</a>
+                                <a href="table.html">Table</a>
+                                <a href="userprofile.html">Profile</a>
+                                <a href="feedback.html">Feedback</a>
+                                <a href="sitemap.html">Sitemap</a>
+                                <a href="teams.html">Team</a>
+                                <a href="Content.html">Content</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editors-group">
+                        <h4>Editors</h4>
+                        <div class="editor-links">
+                            <a href="pageEditor_ST1.html">Student 1</a>
+                            <a href="pageEditor_ST2.html">Student 2</a>
+                            <a href="pageEditor_ST3.html">Student 3</a>
+                            <a href="pageEditor_ST4.html">Student 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright ©2024-Swasth, All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

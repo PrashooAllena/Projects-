@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering Minds: Quality Education for All</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* splash.html Specific Styles */
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: white;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            min-height: 100vh;
+            box-sizing: border-box; /* Include padding in height calculation */
+            background-image: url("images/joyful-schoolboy-with-heavy-backpack.jpg");
+            background-size: cover;
+            background-position: top center;
+        }
+
+        header {
+            background-color: #a6192e; /* Match the red from your image */
+            height: 80px; /* Set the height of your header */
+            text-align: center;
+            padding-top: 20px; /* Center the text in your header */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .splash-screen {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.293);
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            max-width: 200px; /* Adjust as needed */
+            height: auto;
+        }
+
+        .content {
+            margin-bottom: 30px;
+        }
+
+        .content h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        /* Falling Letters */
+        .letter-container {
+            display: flex;
+            justify-content: center; /* Center the letters */
+            align-items: flex-start;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .letter-row {
+            display: flex;
+        }
+
+        .letter-box {
+            width: 30px;
+            height: 30px;
+            background-color: #ffffff; /* Darker red for the boxes */
+            color: rgb(133, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+            font-size: 1.2em;
+            animation: fall 1s forwards;
+            animation-delay: var(--delay);
+            transform: translateY(-200px); /* Start off screen */
+            opacity: 0;
+
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-200px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+
+        /* Loader Styling */
+        .loader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .loader i {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        /* Hide the splash screen after loading */
+        .hidden {
+            display: none;
+        }
+
+        /*Introduction styling */
+        .introduction{
+        margin-top: 45px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .introduction {
+            color: rgb(0, 0, 0); /* Set color to red */
+        }
+
+        #main1 {
+        color: #830303; /* Corrected to target the <p> tag with the specified color */
+        }
+
+        /* Group Members Styling */
+        h2 {
+            font-size: 1.3em; /* Adjust the font size as needed */
+            margin-bottom: 5px; /* Add spacing between title and boxes */
+            color: #ffffff; /* Make the title white for visibility */
+
+        }
+
+        .group-members-container {
+            display: flex;
+            justify-content: center; /* Center the boxes horizontally */
+            align-items: center; /* Vertically align the boxes */
+            flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+            margin-top: 10px; /* Reduced top margin */
+            margin-bottom: 10px; /* Reduced bottom margin */
+            max-width: 100%; /* Prevent boxes from overflowing horizontally */
+        }
+
+        .group-member-box {
+            background-color: #f5f5dc; /* Beige color */
+            color: #400303; /* Dark red color for the text */
+            padding: 10px 15px;
+            margin: 5px; /* Reduced margin for better wrapping */
+            border-radius: 5px;
+            font-size: 1.1em;
+            text-align: center;
+            min-width: 80px; /* Ensure boxes have a minimum width */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+    </style>
+
+<body>
+     <div class="container">
+         <div class="splash-screen">
+
+             <div class="content">
+                 <h1>Empowering Minds: Quality Education for All</h1>
+                 <p>Our mission is to promote inclusive and equitable quality education, ensuring lifelong learning opportunities for all. Through innovation, collaboration, and accessibility, we strive to bridge educational gaps and empower future generations.</p>
+             </div>
+
+             <!-- Animated Letters (Falling Effect) -->
+             <div class="letter-container">
+                  <div class="letter-row">
+                     <div class="letter-box" style="--delay: 0.1s;">A</div>
+                     <div class="letter-box" style="--delay: 0.2s;">ب</div>
+                     <div class="letter-box" style="--delay: 0.3s;">C</div>
+                     <div class="letter-box" style="--delay: 0.4s;">刀</div>
+                     <div class="letter-box" style="--delay: 0.5s;">E</div>
+                     <div class="letter-box" style="--delay: 0.6s;">e</div>
+                     <div class="letter-box" style="--delay: 0.7s;">G</div>
+                     <div class="letter-box" style="--delay: 0.8s;">H</div>
+                     <div class="letter-box" style="--delay: 0.9s;">I</div>
+                     <div class="letter-box" style="--delay: 1.0s;">L</div>
+                     <div class="letter-box" style="--delay: 1.1s;">m</div>
+                     <div class="letter-box" style="--delay: 1.2s;">K</div>
+                     <div class="letter-box" style="--delay: 1.3s;">Ö</div>
+                     <div class="letter-box" style="--delay: 1.4s;">N</div>
+                     <div class="letter-box" style="--delay: 1.5s;">A</></div>
+                     <div class="letter-box" style="--delay: 1.6s;">P</div>
+                     <div class="letter-box" style="--delay: 1.7s;">爱</div>
+                     <div class="letter-box" style="--delay: 1.8s;">R</div>
+                     <div class="letter-box" style="--delay: 1.9s;">S</div>
+                     <div class="letter-box" style="--delay: 2.0s;">X</div>
+                     <div class="letter-box" style="--delay: 2.1s;">书</div>
+                     <div class="letter-box" style="--delay: 2.2s;">写</div>
+                     <div class="letter-box" style="--delay: 2.3s;">V</div>
+                     <div class="letter-box" style="--delay: 2.4s;">W</div>
+                 </div>
+             </div>
+
+             <!-- Animated Loader -->
+             <div class="loader">
+                <i class="fas fa-spinner fa-spin"></i>
+                 <p>Loading...</p>
+             </div>
+
+             <div class="introduction">
+                 <h2 id="main1">Our Mission:</h2>
+                 <p>
+                     <strong>Igniting Change Through Quality Education.</strong>
+                 </p>
+                 <p>
+                     This website is dedicated to creating a world where everyone has access to the transformative power of education.
+                 </p>
+                 <p>
+                     Explore our resources and learn how you can be a part of this vital mission.
+                 </p>
+             </div>
+
+             <h2>Group Members:</h2> <!-- Group Members Title -->
+             <div class="group-members-container">
+                 <div class="group-member-box">Pirachothaya Vinopa</div>
+                 <div class="group-member-box">Mohamed Basim</div>
+                 <div class="group-member-box">Mohamed Humaid</div>
+                 <div class="group-member-box">Arulalagan Saarkesh</div>
+             </div>
+
+         </div>
+     </div>
+	
+      <script>
+         setTimeout(function() {
+             window.location.href = "qualityeduindex.html";
+         }, 5000); // 4 seconds in milliseconds
+     </script>
+
+ </body>
+ </html>

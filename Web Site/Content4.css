@@ -1,0 +1,105 @@
+/* Content4.css - Style Variation 1: Clean and Modern */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: auto;
+    background-image: url(images/low-angle-stacked-books-graduation-cap-ladders-education-day.jpg);
+    background-size: cover;
+    color: #260401; 
+    line-height: 1.6;
+}
+nav {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background: rgb(200, 0, 0);
+    padding: 10px 30px;
+    border-radius: 50px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #ff4444;
+}
+#navhead{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: ;
+    color: #000000;
+}
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Very subtle shadow */
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.banner img:hover {
+    transform: scale(1.03); /* Gentle zoom on hover */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.7em;
+    color: #34495e; /* Darker, more professional header */
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    margin-top: 35px;
+    margin-bottom: 18px;
+    font-size: 1.9em;
+    color: #2980b9; /* Blue subheadings for readability */
+    border-bottom: 3px solid #ecf0f1; /* Light grey underline */
+    padding-bottom: 8px;
+}
+
+p {
+    font-size: 1.15em;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: square; /* Updated bullet style */
+    padding-left: 35px;
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 12px;
+}

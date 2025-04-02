@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Global Goals</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        /* qualityeduindex.html Specific Styles */
+
+        .home-wrapper {
+            display: flex;
+            height: 100vh;
+            background-image: url(images/low-angle-stacked-books-graduation-cap-ladders-education-day.jpg);
+            background-size: cover;
+            position: relative;
+        }
+
+        .left-section {
+            width: 50%;
+            background: rgba(176, 0, 0, 0.9);
+            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .left-section h1 {
+            font-size: 48px;
+            font-weight: 300;
+        }
+
+        .left-section h1 span {
+            font-weight: 700;
+        }
+
+        .left-section p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .right-section {
+            width: 50%;
+            background: url('images/house.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        /* Content Section Styles */
+        .content-section {
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+        }
+
+        .vision-mission {
+            display: flex;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto 50px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .content-card h3 {
+            padding: 1rem;
+            margin: 0;
+        }
+
+        .read-more {
+            display: block;
+            padding: 1rem;
+            background: #b00000;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        @media (max-width: 1024px) {
+            .card-container, .vision-mission {
+                grid-template-columns: repeat(2, 1fr);
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card-container, .vision-mission {
+                grid-template-columns: 1fr;
+            }
+
+            .home-wrapper {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .left-section, .right-section {
+                width: 100%;
+                min-height: 50vh;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Optional: Add padding to account for fixed navigation */
+        .content-section {
+            scroll-margin-top: 100px; /* Adjust based on your header height */
+        }
+    </style>
+</head>
+<body>
+    <!-- Original Home Page -->
+    <div class="home-wrapper">
+        <div class="logo-container">
+            <img src="images/image-removebg-preview1.png" alt="Logo">
+            <span class="logo-name">Global Goals</span>
+        </div>
+
+        <div class="left-section">
+            <h1>Quality <span>Education</span></h1>
+            <h1>for <span>Life</span> growth</h1>
+            <p>Ensure quality education and lifelong learning for all.</p>
+            <a href="#content-section" class="btn">Find more >>></a>
+        </div>
+        <div class="right-section"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="qualityeduindex.html" class="active">Home</a></li>
+                <li><a href="about us.html" >About us</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userprofile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="teams.html">Team</a>
+                <li><a href="Content_st1.html">Content</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section" id="content-section">
+        <section class="vision-mission">
+            <div class="card">
+                <h3>Vision</h3>
+                <p>Our vision is a world where quality education is a fundamental right, enabling individuals to unlock their potential and drive positive change in their communities.</p>
+            </div>
+            <div class="card">
+                <h3>Mission</h3>
+                <p>Our mission is to provide inclusive and equitable quality education for all, empowering individuals to reach their full potential and contribute to a sustainable future.</p>
+            </div>
+        </section>
+
+        <section class="card-container">
+            <div class="content-card">
+                <img src="images/Quality Education.jpg" alt="Quality Education">
+                <h3>What is Quality Education</h3>
+                <a href="Content_st1.html" class="read-more">Read More</a>
+            </div>
+            <div class="content-card">
+                <img src="images/image1.jpg" alt="Accommodation">
+                <h3>Educational Infrastructure</h3>
+                <a href="content2.html" class="read-more">Read More</a>
+            </div>
+            <div class="content-card">
+                <img src="images/learningEnviourment.jpg" alt="Learning Environment">
+                <h3>Learning Environments</h3>
+                <a href="Content3.html" class="read-more">Read More</a>
+            </div>
+            <div class="content-card">
+                <img src="images/communitySupport.jpg" alt="Community Support">
+                <h3>Community Support</h3>
+                <a href="content4.html" class="read-more">Read More</a>
+            </div>
+        </section>
+    </div>
+    
+	<footer class="swasth-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Quality Education</h3>
+                <p style="color:white;">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</p>
+            </div>
+            <div class="footer-columns">
+                <div class="links-section">
+                    <div class="links-group">
+                        <h4>Links</h4>
+                        <div class="links-grid">
+                            <div class="link-column">
+                                <a href="qualityeduindex.html">Home</a>
+                                <a href="aboutus.html">About us</a>
+                                <a href="volunteer.html">Volunteer</a>
+                                <a href="table.html">Table</a>
+                                <a href="userprofile.html">Profile</a>
+                                <a href="feedback.html">Feedback</a>
+                                <a href="sitemap.html">Sitemap</a>
+                                <a href="teams.html">Team</a>
+                                <a href="Content.html">Content</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editors-group">
+                        <h4>Editors</h4>
+                        <div class="editor-links">
+                            <a href="pageEditor_ST1.html">Student 1</a>
+                            <a href="pageEditor_ST2.html">Student 2</a>
+                            <a href="pageEditor_ST3.html">Student 3</a>
+                            <a href="pageEditor_ST4.html">Student 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright ©2024-Swasth, All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        
+
+                // Smooth scrolling
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+        });
+
+    </script>
+</body>
+</html>

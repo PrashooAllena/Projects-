@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - Pirachothaya Vinopa</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="global.css"> <!-- Global CSS link -->
+    
+</head>
+<body>
+    
+    <!-- Header consistent with the rest of the pages -->
+
+    <header id="top">
+        <h1 style="color: white";>Quality education and lifelong learning for all.</h1>
+    </header>
+
+    <section class="stud">
+        <h2>Pirachothaya Vinopa, Front-End Developer</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Splash Page Section -->
+
+            <section>
+                <h2 id="splash">Splash Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Splash page was designed to create an engaging and informative introduction to the website.  I used HTML5 for structure and CSS3 for styling and animations.  A key technique was employing a `div` with a background image (`splash-screen` class) to set the overall visual tone.  The falling letter animation was achieved using CSS keyframes (`@keyframes fall`) applied to individual `div` elements (`letter-box` class) containing each letter.  The `setTimeout` function in Javascript was used to automatically redirect to the main page after 5 seconds.</p>
+                        <p>
+                            The main structure consists of a `div` with the `splash-screen` class which holds the main content within it.  Inside, the `content` div displays a title and a brief paragraph.  The animated letters use nested `div` elements (`letter-container`, `letter-row`, `letter-box`) to arrange the characters and apply individual delays to create the falling effect.  Finally, a `loader` div contains the spinner animation created using CSS `border` and `animation` properties.
+                        </p>
+                        <p>
+                            Key CSS properties used were: `background-image`, `background-size`, `background-position` to style the background; `animation` and `@keyframes` to animate the falling letters and the loader; `display: flex` and `justify-content` to center elements; and `setTimeout` with Javascript to redirect the user.
+                        </p>
+                    
+                    <h3>Accessibility</h3>
+                        <p>For accessibility, I ensured that the background image had sufficient contrast with the text. The animated elements do not convey essential information, so they do not hinder accessibility. Alt text would be provided for the logo if one was being used.  The timed redirect is kept short to minimize the time a user might be disoriented.</p>
+                    
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#splashVal">Validation Page Link</a>, jump to the splash page validation section.</p>
+
+                    <h3>Link to the page</h3>
+                        <p><a href="splash.html">Splash Page Link</a></p>
+            </section>
+
+            <!-- Volunteer Page Section -->
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Volunteer page provides a visually appealing and interactive interface for browsing volunteer opportunities. I used HTML5 for the structure and CSS3 for styling, including flexbox and grid layouts for responsiveness. Each volunteer opportunity is presented in a card format (`volunteer-card` class) that includes an image, title, location, rating, tags, a brief description, and a "Details" button.</p>
+                        <p>
+                            The page utilizes a grid layout for arranging the volunteer cards and flexbox for the card content. A dropdown menu (`filter-dropdown`) allows users to sort opportunities.  The cards include images (`img` tag), headings (`h3` tag), paragraph descriptions (`p` tag), and interactive button. CSS is used to style the card layout, images, and hover effects for enhanced user experience.
+                        </p>
+                        <p>
+                            Key CSS properties used are: `display: grid` and `grid-template-columns` for the volunteer card layout; `display: flex` to arrange the card content; `object-fit: cover` for image sizing; and `transition` for the hover effects.  The feedback section uses CSS to create a responsive form with styled textarea and buttons.
+                        </p>
+
+                    <h3>Accessibility</h3>
+                        <p>Accessibility considerations include ensuring sufficient contrast between text and background colors, providing alt text for all images, and using semantic HTML to structure the content. The "Details" buttons should link to more descriptive pages or pop-ups.  The sort dropdown is designed to be keyboard accessible. ARIA attributes could be added to provide better screen reader support.</p>
+
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#volunteerVal">Validation Page Link</a>, jump to the volunteer page validation section.</p>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="volunteer.html">Volunteer Page Link</a></p>
+            </section>
+
+            <!-- Content Page Section -->
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Content page is designed to present information about quality education in a structured and accessible manner. HTML5 is used for semantic structure and CSS3 for styling. An internal navigation menu (`internalNav`) allows users to quickly jump to different sections of the page. Each section (`section` tag) includes a heading, descriptive text, and relevant images.</p>
+                        <p>
+                            The `internalNav` is created using a `nav` element with an unordered list (`ul`) of anchor links (`a` tag). The `section` elements are styled with a white background and box shadow for visual separation.  The images are set to `max-width: 100%` to ensure responsiveness. A "Back to Top" link provides easy navigation to the top of the page.
+                        </p>
+                        <p>
+                            Key CSS properties used are: `position: sticky` to keep the internal navigation menu visible; `display: block` for consistent link styling; and `max-width: 100%` for responsive images.  The javascript is used to add back to top functionality.
+                        </p>
+
+                    <h3>Accessibility</h3>
+                        <p>Accessibility features include using semantic HTML5 tags (e.g., `header`, `nav`, `main`, `section`, `footer`), ensuring sufficient contrast between text and background colors, and providing descriptive alt text for all images. The internal navigation menu helps users quickly navigate the page. ARIA attributes and keyboard navigation should be further tested to improve accessibility.</p>
+
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#contentVal">Validation Page Link</a>, jump to the content page validation section.</p>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content.html">Content Page Link</a></p>
+            </section>
+
+            <!-- Challenges and Lessons Learned Section -->
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>One challenge was creating the falling letter animation for the Splash page, ensuring it was both visually appealing and performed well across different browsers.  I learned to fine-tune the CSS keyframes and delays to achieve the desired effect without impacting performance.  Another challenge was creating responsive layouts for the Volunteer page, particularly the volunteer card grid. I learned to use CSS grid and media queries effectively to adapt the layout to different screen sizes.  Additionally, I underestimated the importance of thorough cross-browser testing and accessibility considerations early in the development process. I learned to prioritize these aspects to ensure a consistent user experience and compliance with web standards.</p>
+            </section>
+
+            <!-- Compliance Section -->
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>The pages I created aim to be compliant with Janet regulations, focusing on accessibility, privacy, and data protection. Accessibility is addressed by providing alt text for images, using semantic HTML, and ensuring sufficient color contrast. To comply with privacy regulations, no personal data is collected or stored on these static pages. I am committed to following best practices for secure coding and data handling as required by Janet regulations. However, a full compliance audit is necessary to ensure complete adherence to all applicable standards.</p> 
+
+                    
+            </section>
+
+            <!-- References Section -->
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Links to resources used:</p>
+                <ul class="ref">
+                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Last accessed: 2025-02-11).</li>
+                    <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites, <i>John Wiley & Sons. Inc., Indianapolis.</i></li>
+                    <li>MDN Web Docs (n.d.).  <i>Mozilla Developer Network.</i> Available at: <a href="https://developer.mozilla.org/en-US/">https://developer.mozilla.org/en-US/</a> (Last accessed: 2025-02-11).</li>
+                    <li>W3C (n.d.). <i>World Wide Web Consortium.</i> Available at: <a href="https://www.w3.org/">https://www.w3.org/</a> (Last accessed: 2025-02-11).</li>
+                </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#">Home page </a></li>
+                        <li><a href="#">Table page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#">Feedback page</a> </li>
+                        <li><a href="#">Team page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#">Profile page </a></li>
+                        <li><a href="#">Sitemap page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer consistent with the rest of the pages -->
+    <footer class="swasth-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Quality Education</h3>
+                <p style="color:white;">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</p>
+            </div>
+            <div class="footer-columns">
+                <div class="links-section">
+                    <div class="links-group">
+                        <h4>Links</h4>
+                        <div class="links-grid">
+                            <div class="link-column">
+                               <a href="qualityeduindex.html">Home</a>
+                                <a href="aboutus.html">About us</a>
+                                <a href="volunteer.html">Volunteer</a>
+                                <a href="table.html">Table</a>
+                                <a href="userprofile.html">Profile</a>
+                                <a href="feedback.html">Feedback</a>
+                                <a href="sitemap.html">Sitemap</a>
+                                <a href="teams.html">Team</a>
+                                <a href="Content.html">Content</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editors-group">
+                        <h4>Editors</h4>
+                        <div class="editor-links">
+                            <a href="pageEditor_ST1.html">Student 1</a>
+                            <a href="pageEditor_ST2.html">Student 2</a>
+                            <a href="pageEditor_ST3.html">Student 3</a>
+                            <a href="pageEditor_ST4.html">Student 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright ©2024-Swasth, All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
